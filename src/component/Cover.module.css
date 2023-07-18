@@ -1,0 +1,131 @@
+.main{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    justify-content: space-around;
+    padding: 0 40px;
+    margin: 20px;
+    height: 38vw;
+   
+}
+.image{
+    width: 60vw;
+    height: 30vh;
+    margin-right: 30px;
+}
+.cover{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    margin-right: 23px;
+    justify-content: space-between;
+
+}
+.title h1{
+    width: 20vw;
+    font-size: 3rem;
+    font-weight: bold;
+    
+}
+.info p{
+    width: 29vw;
+    font-size: 1.5rem;
+    color: hsl(236, 13%, 42%);
+}
+.info button{
+    border: none;
+    background-color: hsl(5, 85%, 63%) ;
+    padding: 20px;
+    width: 15vw;
+    color: hsl(36, 100%, 99%) ;
+    margin-top: 20px;
+}
+.info button:hover{
+    background-color: hsl(236, 13%, 42%);
+
+}
+
+.side{
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%) ;
+    height: 65vh;
+    padding: 8px  20px;
+}
+.side h2{
+   
+    color: hsl(35, 77%, 62%);
+    font-size: 2rem;
+}
+
+.sidebar h3{
+    color:  hsl(36, 100%, 99%) ; 
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.sidebar h3:hover{
+    color: hsl(35, 77%, 62%) ;
+}
+.sidebar p{
+    color: hsl(233, 8%, 79%);
+}
+.line{
+    border: 1px solid hsl(236, 13%, 42%);
+    margin: 30px 0;
+    
+}
+@media screen and (max-width:694px) {
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .image{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+      
+        padding-left: 1.5rem;
+    }
+    .cover{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    .title h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 2.3rem;
+        margin-left: 15px;
+       
+    }
+    .info p{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-left: 1.5rem;
+        justify-content: center;
+    }
+    .info button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1.52rem;
+        width: 60%;
+        margin-bottom: 15px;
+    }
+
+   
+    .side{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-left: 1.5rem;
+        padding: 15px;
+       
+     
+    }
+    
+}

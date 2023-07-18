@@ -1,0 +1,46 @@
+.container{
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    justify-content: space-around;
+    align-items:center;
+    margin-bottom: 25px;
+   
+}
+.container img{
+    margin: 20px;
+}
+
+.container h2{
+    color: hsl(233, 8%, 79%);
+    font-size: 2rem;
+    font-weight: bold;
+  
+}
+.container h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+    color: hsl(240, 100%, 5%);
+    cursor: pointer;
+
+}
+.container h3:hover{
+    color: hsl(35, 77%, 62%) ;
+}
+.container p{
+    font-size: 1.2rem;
+    color: hsl(236, 13%, 42%);
+}
+@media screen and (max-width: 694px){
+    .container{
+        display: flex;
+        justify-content: center;
+       
+    }
+    .info{
+        font-size: 1rem;
+    }
+   
+ 
+    
+}
